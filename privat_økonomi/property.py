@@ -1,7 +1,7 @@
 from privat_økonomi.utils import pexit
 
 
-class Expenses:
+class Property:
     """ Samling af udgifter forbundet med at eje lejlighed/rækkehus/villa, pr måned """
 
     def __init__(self, låne_beløb, ejendomsværdi, grundværdi):
@@ -21,11 +21,13 @@ class Expenses:
         self.tinglysningsafgift = låne_beløb * 0.0145 + 1660
 
         # TODO: Der findes fradrag!
-        self.ejendomsværdiskat = calc_ejendomsværdiskat(ejendomsværdi)
+        # TODO: Meget svær at beregne. Copy paste hellere værdier fra en reel bolig
+        # self.ejendomsværdiskat = calc_ejendomsværdiskat(ejendomsværdi)
 
         # TODO: Der findes fradrag!
+        # TODO: Meget svær at beregne. Copy paste hellere værdier fra en reel bolig
         # Omkostninger til kommunen. Varierer.
-        self.grundskyld = calc_grundskyld(grundværdi)
+        # self.grundskyld = calc_grundskyld(grundværdi)
         print(f'{self.ejendomsværdiskat=} {self.grundskyld=}')
 
         # Gebyr for afhenting af skrald og adgang til skraldeplads. Obligatorisk
@@ -93,6 +95,6 @@ def calc_grundskyld(grundværdi: int):
     return int(grundværdi * 20 / 1000 / 12)
 
 
-kim_gamle = Expenses(10_000_000, 3_700_000, 2_385_800)
-kim_nye = Expenses(10_000_000, 8_471_000, 5_312_000)
+kim_gamle = Property(10_000_000, 3_700_000, 2_385_800)
+kim_nye = Property(10_000_000, 8_471_000, 5_312_000)
 # nabo_nye = Expenses(10_000_000, 5_500_000, 4_000_000)
