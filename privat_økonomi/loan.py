@@ -33,19 +33,13 @@ def calculate_amortization_table(loan_amount, annual_interest_rate, loan_term_ye
 
         amortization_table.append(
             {
-                "Payment Number": payment_number,
-                "Principal Payment": principal_payment,
-                "Interest Payment": interest_payment,
-                "Remaining Loan Balance": loan_amount,
+                "payment_number": payment_number,
+                "afdrag": principal_payment,
+                "rente": interest_payment,
+                "resterende_lån": loan_amount,
             }
         )
 
-    return amortization_table
-
-
-calculate_amortization_table(1_000_000, 5, 10)
-t1 = calculate_amortization_table(1_000_000, 5, 30)
-
-# Print the amortization table
-for payment in t1:
-    print(payment)
+    total_rente = sum([e["rente"] for e in amortization_table])
+    total_afdrag = sum([e["afdrag"] for e in amortization_table])
+    return amortization_table, total_rente, total_afdrag

@@ -5,7 +5,8 @@
 
 
 ## TODO
-- Kan Leje, Andel eller Ejer bedst betale sig? 
+- Kan Leje, Andel eller Ejer bedst betale sig?
+- Udbetaling skal kunne variere
 - Beregn hvor meget en given bolig skal stige før det kan betale sig at købe 
 - Beregn hvor meget cash der som minimum skal bruges til køb af bolig
 - Man skal kunne beregne den månedlige og totale pris for at eje både leje, andel samt ejer bolig
