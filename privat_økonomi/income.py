@@ -25,8 +25,7 @@ class Income:
         ekstra_udgifter = renter
 
         # Den reelle pris som eventuelle rentestigninger har kostet
-        self.gevinst = self.ekstra_indkomst - ekstra_udgifter
-        print("")
+        self.indkomst_ændring = ekstra_udgifter - self.ekstra_indkomst
 
 
 def _calc_rente_fradrag(renter: int) -> int:
