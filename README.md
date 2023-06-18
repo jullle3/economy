@@ -1,3 +1,23 @@
+# Konklusioner
+- De rige bliver rigere. 
+- Det kan kun betale sig at eje hvis priserne stiger, der er nemlig betydelige udgifter forbundet med at eje (primært renter)
+- Samtlige politiske tiltag siden 1960 der blev solgt som at skulle hjælpe førstegangskøbere, har haft den modsatte effekt
+
+Eksempler:
+  - Rentefradrag
+  - Skattestop på ejerudgifter
+  - Afdragsfrie lån
+  - Andet?
+
+# Output
+| Type  | Years | Forv. årlig stigning | Rente | Bolig Pris | Forv. pris | Renter  | Boligudgift | Engangsomkostninger | Total Udgifter | Total Indtægter | Gevinst efter skat | Udgifter gns./år | Udgifter år 1 | Udgifter år 2 |
+|-------|-------|----------------------|-------|------------|------------|---------|-------------|---------------------|----------------|-----------------|-------------------|------------------|---------------|---------------|
+| Andel | 10    | 5                    | 6     | 1150000    | 1873228    | -348840 | -360000     | -34571              | -694191        | 723220          | 29.028            | -69420          | -131421       | -91975        |
+| Andel | 10    | 5                    | 6     | 4000000    | 6515578    | -1295640| -420000     | -62002              | -1594812       | 2515570         | 920.757           | -159482         | -330016       | -249908       |
+| Ejer | 10    | 5                    | 6     | 3000000    | 4886683    | -963400 | -504000     | -52377              | -1463827       | 1886680         | 422.852           | -146383          | -270838       | -204998       |
+| Ejer  | 10    | 5                    | 6     | 11000000   | 17917840   | -3621440| -660000     | -129377             | -3979767       | 6917840         | 2.938.072         | -397977         | -827057       | -647076       |
+    
+
 ## Sources
 - https://media.sparnord.dk/dk/privat/bolig/laaneanbefaling.pdf
 - https://www.ecb.europa.eu/home/html/index.en.html
@@ -7,6 +27,7 @@
 ## TODO
 - Kan Leje, Andel eller Ejer bedst betale sig?
 - Udbetaling skal kunne variere
+- Beregn præcis hvor mange år der går før en bolig har tjent sig hjem. Dette vil nok kræve en armotiseringstabel
 - Beregn hvor meget en given bolig skal stige før det kan betale sig at købe 
 - Beregn hvor meget cash der som minimum skal bruges til køb af bolig
 - Man skal kunne beregne den månedlige og totale pris for at eje både leje, andel samt ejer bolig

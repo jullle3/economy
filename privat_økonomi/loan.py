@@ -34,11 +34,14 @@ def calculate_amortization_table(loan_amount, annual_interest_rate, loan_term_ye
         amortization_table.append(
             {
                 "payment_number": payment_number,
-                "afdrag": principal_payment,
-                "rente": interest_payment,
+                "afdrag": -principal_payment,
+                "rente": -interest_payment,
                 "resterende_lån": loan_amount,
             }
         )
+
+    if len(amortization_table) % 12 != 0:
+        raise Exception(f"Amortization table includes non-full years with len {len(amortization_table)}")
 
     total_rente = sum([e["rente"] for e in amortization_table])
     total_afdrag = sum([e["afdrag"] for e in amortization_table])
