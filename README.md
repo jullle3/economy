@@ -1,9 +1,11 @@
 # Konklusioner
 - De rige bliver rigere. 
 - Det kan kun betale sig at eje hvis priserne stiger, der er nemlig betydelige udgifter forbundet med at eje (primært renter)
+- I tider med priser som IKKE stiger, kan det bedst betale sig at bo billigst muligt
+- Cash gavner ikke ligeså meget mere som før Corona. Skyldes til dels at boliglån + realkredit lån er tæt på lig dyre nu.
 - Samtlige politiske tiltag siden 1960 der blev solgt som at skulle hjælpe førstegangskøbere, har haft den modsatte effekt
 
-Eksempler:
+- Eksempler:
   - Rentefradrag
   - Skattestop på ejerudgifter
   - Afdragsfrie lån
@@ -26,10 +28,6 @@ Eksempler:
 
 ## TODO
 - Kan Leje, Andel eller Ejer bedst betale sig?
-- Udbetaling skal kunne variere
-- Beregn præcis hvor mange år der går før en bolig har tjent sig hjem. Dette vil nok kræve en armotiseringstabel
-- Beregn hvor meget en given bolig skal stige før det kan betale sig at købe 
-- Beregn hvor meget cash der som minimum skal bruges til køb af bolig
 - Man skal kunne beregne den månedlige og totale pris for at eje både leje, andel samt ejer bolig
 - En særskildt del af programmet skal tydeliggøre hvor meget skat man betaler. her skal tages højde for diverse fradrag såsom rentefradrag
 - Bonus. Kunne være fedt med en beregning på hvor meget skat man reelt betaler, bare sådan ca. 

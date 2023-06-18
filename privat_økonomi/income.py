@@ -8,7 +8,7 @@ class Income:
         """
         :param indkomst: Indkomst før skat, fradrag og uden pension
         """
-
+        renter = int(renter)
         # TODO: Er der flere betydelige fradrag?
         self.rente_fradrag = _calc_rente_fradrag(renter)
         self.fradrag = self.rente_fradrag + kørselsfradrag
@@ -24,7 +24,7 @@ class Income:
 
         ekstra_udgifter = renter
 
-        # Den reelle pris som eventuelle rentestigninger har kostet
+        # Den reelle pris som rentestigninger har kostet
         self.indkomst_ændring = ekstra_udgifter - self.ekstra_indkomst
 
 
